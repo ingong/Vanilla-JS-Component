@@ -10,6 +10,7 @@ export default class Component {
   template() {
     return '';
   }
+  // render 를 실행할때마다 새로운 event 가 등록된다
   render() {
     this.$target.innerHTML = this.template();
     this.setEvent();
