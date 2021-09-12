@@ -1,19 +1,26 @@
 export default class Component {
   $target;
+  // why? 부모컴포넌트가 자식 컴포넌트에게 상태 혹은 메서드를 넘겨주기 위해서
+  $props;
   $state;
-  constructor($target) {
+  constructor($target, $props) {
     this.$target = $target;
+    this.$props = $props;
     this.setup();
     this.setEvent();
     this.render();
   }
   setup() {}
+  mounted() {}
   template() {
     return '';
   }
-  // render 를 실행할때마다 새로운 event 가 등록된다
+
   render() {
     this.$target.innerHTML = this.template();
+    // render 이후에 mount 가 실행
+    // 왜 ?  render 이후에 추가적인 기능을 수행하기 위해서
+    this.mounted();
   }
   setEvent() {}
   // 새로운 상태를 만들때는 기존의 상태를 변경시키는 것이 아니라,
