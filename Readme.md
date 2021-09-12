@@ -39,7 +39,7 @@
 - keypress 이벤트 : 입력 된 문자를 나타냄
 - 객체 destructuring : event.target 으로 안가져와도된다.
 
-```javascript=
+```javascript
 const todos = [
   { id: 1, content: 'HTML', completed: true },
   { id: 2, content: 'CSS', completed: false },
