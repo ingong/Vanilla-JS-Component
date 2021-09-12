@@ -4,6 +4,7 @@ export default class Component {
   constructor($target) {
     this.$target = $target;
     this.setup();
+    this.setEvent();
     this.render();
   }
   setup() {}
@@ -13,7 +14,6 @@ export default class Component {
   // render 를 실행할때마다 새로운 event 가 등록된다
   render() {
     this.$target.innerHTML = this.template();
-    this.setEvent();
   }
   setEvent() {}
   // 새로운 상태를 만들때는 기존의 상태를 변경시키는 것이 아니라,
