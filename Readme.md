@@ -5,7 +5,6 @@
 [개발자 황준일님 블로그 Vanilla JS 로 웹컴포넌트 만들기](https://junilhwang.github.io/TIL/Javascript/Design/Vanilla-JS-Component/#_4-entry-point-%E1%84%87%E1%85%A7%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC)
 글의 예제를 토대로 작성한 Repository 입니다.
 
-<br/>
 
 ### Today I Learned
 
